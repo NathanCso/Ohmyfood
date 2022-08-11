@@ -1,26 +1,34 @@
-body html
+body 
 {
-    font-family: Roboto ,sans-serif;
+    font-family: 'Roboto' ,sans-serif;
+    margin: 0 !important;
 }
+
+@media screen and (min-width: 200px) and (max-width: 550px) {
+ 
+
+ }
+
 
 header img 
 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: 580px;
+    margin: auto;
     text-align: center;
-    margin-bottom: 30px;
+    
 }
 
-header .localisation
-{
-    border: 2px solid #d4caca; 
+ .localisation
+{ 
     background:#f3f3f3 ; 
     height: 50px;
     text-align: center;
     -webkit-box-shadow: 0px 0px 10px 2px #D1C7B6; 
     box-shadow: 0px 0px 10px 2px #D1C7B6;
+    margin-top: 20px;
+    padding-top: 20px;
 
 }
 
@@ -45,6 +53,7 @@ header span
     flex-direction: column;
     text-align: center;
     height: 200px;
+    width: 100%;
 }
 
 .explore h2
@@ -54,21 +63,21 @@ header span
 
 .explore a 
 {
-    border: 0;
-    padding: .75rem 1.5rem;
-    font-weight: 500;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border-radius: 100px;
-    color: #fff;
-    background-color: #686868;
-    background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
-    cursor: pointer;
-    transition-duration: .25s;
-    box-shadow: .25rem .25rem 10px rgba(0,0,0,.25);
-    width: 190px;
-    margin-left: 550px;
-    text-decoration: none;
+  color: white;
+  padding: 1.5rem 3rem;
+  text-align: center;
+  background: #ff79da;
+  background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+  width: min-content;
+  white-space: nowrap;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  border-radius: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
 }
 
 .choose
@@ -80,6 +89,8 @@ header span
     background-color: #f6f6f6;
     display: flex;
     position: relative;
+    height: 40px;
+    width: 85%;
   }
 
   .compose
@@ -91,6 +102,8 @@ header span
     background-color: #f6f6f6;
     display: flex;
     position: relative;
+    height: 40px;
+    width: 85%;
   }
   
   .degust
@@ -102,52 +115,158 @@ header span
     background-color: #f6f6f6;
     display: flex;
     position: relative;
+    height: 40px;
+    width: 85%;
   }
   
   .choose a 
   {
-    border:solid rgba(147,86,220,.9) ;
-    border-radius: 60%;
-    background-color: rgba(147,86,220,.9);
+    background: #9356dc;
     color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: absolute;
+    left: -1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .compose a 
   {
-    border:solid rgba(147,86,220,.9) ;
-    border-radius: 60%;
-    background-color: rgba(147,86,220,.9);
+    background: #9356dc;
     color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: absolute;
+    left: -1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .degust a 
   {
-    border:solid rgba(147,86,220,.9) ;
-    border-radius: 80%;
-    background-color: rgba(147,86,220,.9);
+    background: #9356dc;
     color: white;
-    width: 20px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: absolute;
+    left: -1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
+.choose span
+{
+       margin-left: 50px;
+       font-size: 20px;
+       justify-content: center;
+       margin-top: 10px;
+}
+
+.compose span
+{
+       margin-left: 50px;
+       font-size: 20px;
+       justify-content: center;
+       margin-top: 10px;
+}
+
+.degust span
+{
+       margin-left: 50px;
+       font-size: 20px;
+       justify-content: center;
+       margin-top: 10px;
+}
+
+.choose i 
+{
+  margin-left: 40px;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.compose i
+{
+  margin-left: 40px;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.degust i
+{
+  margin-left: 40px;
+  font-size: 25px;
+  margin-top: 10px;
+}
 
   .restaurant
   {
-    background-color: #fafafa;
+    background-color: #f6f6f6;
   }
+.carte
+{
+  max-width: 1280px;
+  margin: auto;
+  position: relative;
+}
+  
 
   .restaurant img
   {
     height: 12rem;
-    width: 100%;
-   border: 0 solid transparent;
-   border-radius: 1rem 1rem 0 0;
-   box-shadow: none;
-   object-fit: cover;
+width: 90%;
+border: 0 solid transparent;
+border-radius: 1rem 1rem 0 0;
+box-shadow: none;
+object-fit: cover;
+margin-left: 20px ;
   }
+
+.ne{
+  background-color: #99e2d0;
+color: #1b6150;
+padding: .5rem;
+border-radius: .125rem;
+position: absolute;
+top: 1rem;
+right: .75rem;
+width ;
+}
+  
  
   .description
   {
-position: relative;
-display: flex;
-align-items: center;
-background-color: white;
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+
+  footer
+  {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #353535;;
+    color: #fafafa;
+  }
+
+  footer i
+  {
+      color: #fafafa;
+      padding-right: 20px;
+  }
+
+  footer a 
+  {
+    color: #fafafa;
+    text-decoration: none;
   }
