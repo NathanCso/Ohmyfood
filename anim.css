@@ -212,9 +212,8 @@ header span
   }
 .carte
 {
-  max-width: 1280px;
-  margin: auto;
-  position: relative;
+  
+
 }
   
 
@@ -229,7 +228,8 @@ object-fit: cover;
 margin-left: 20px ;
   }
 
-.ne{
+
+.new{
   background-color: #99e2d0;
 color: #1b6150;
 padding: .5rem;
@@ -239,16 +239,45 @@ top: 1rem;
 right: .75rem;
 width ;
 }
-  
- 
-  .description
-  {
-    padding: 1rem;
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
 
+ 
+  
+.description 
+{
+  
+  background-color: #fff;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  width: 90%;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: black;
+  text-decoration: none;
+  border-bottom-left-radius: 16px ;
+  border-bottom-right-radius: 16px ;
+}
+
+.titre
+{
+  color: black;
+  text-decoration: none;
+}
+
+.loc
+{
+  color: black;
+  text-decoration: none;
+}
+  
+.carte i 
+{
+  color: black;
+  text-decoration: none;
+  position: relative;
+  left: 110px;
+} 
 
   footer
   {
