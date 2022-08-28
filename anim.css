@@ -9,6 +9,11 @@ body
 
  }
 
+a{
+  text-decoration: none;
+}
+
+
 
 header img 
 {
@@ -52,14 +57,25 @@ header span
     display: flex;
     flex-direction: column;
     text-align: center;
-    height: 200px;
+    height: 350px;
     width: 100%;
 }
 
 .explore h2
 {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
+    flex-wrap: wrap;
+    display: flex;
+    margin-bottom: 0px;
 }
+
+.explore p 
+{
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  display: flex;
+}
+
 
 .explore a 
 {
@@ -80,6 +96,11 @@ header span
   text-decoration: none;
 }
 
+.fonctionnement h2
+{
+       margin-left: 20px;
+}
+
 .choose
 {
     padding: 1.5rem;
@@ -90,7 +111,8 @@ header span
     display: flex;
     position: relative;
     height: 40px;
-    width: 85%;
+    width: 80%;
+    margin-left: 30px;
   }
 
   .compose
@@ -103,7 +125,8 @@ header span
     display: flex;
     position: relative;
     height: 40px;
-    width: 85%;
+    width: 80%;
+    margin-left: 30px;
   }
   
   .degust
@@ -116,7 +139,8 @@ header span
     display: flex;
     position: relative;
     height: 40px;
-    width: 85%;
+    width: 80%;
+    margin-left: 30px;
   }
   
   .choose a 
@@ -206,14 +230,20 @@ header span
   margin-top: 10px;
 }
 
-  .restaurant
+
+
+
+
+
+ .restaurant
   {
     background-color: #f6f6f6;
   }
-.carte
-{
-  
 
+.restaurant h2
+{
+    margin-left: 20px;
+    padding-top: 30px;
 }
   
 
@@ -226,58 +256,92 @@ border-radius: 1rem 1rem 0 0;
 box-shadow: none;
 object-fit: cover;
 margin-left: 20px ;
+margin-bottom: 1px;
+position: relative;
   }
 
 
 .new{
-  background-color: #99e2d0;
-color: #1b6150;
-padding: .5rem;
-border-radius: .125rem;
-position: absolute;
-top: 1rem;
-right: .75rem;
-width ;
+ 
+  background: #a9e0d1;
+  color: #3b8468;
+  font-weight: 500;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.3rem;
+  position: absolute;
+  position: absolute;
+  top: 960px;
+  right: 50px;
 }
 
- 
+.new2
+{
+  background: #a9e0d1;
+  color: #3b8468;
+  font-weight: 500;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.3rem;
+  position: absolute;
+  position: absolute;
+  top: 1280;
+  right: 50px;
+}
   
 .description 
 {
-  
-  background-color: #fff;
-  position: relative;
-  text-decoration: none;
-  color: inherit;
-  display: flex;
-  width: 90%;
+  background-color: inherit;
+  width: 170px;
   margin-left: 20px;
-  margin-bottom: 20px;
-  color: black;
-  text-decoration: none;
-  border-bottom-left-radius: 16px ;
-  border-bottom-right-radius: 16px ;
-}
-
-.titre
-{
-  color: black;
   text-decoration: none;
 }
 
-.loc
-{
-  color: black;
-  text-decoration: none;
+.description h3{
+font-weight: 600;
+margin-bottom: 0.5rem;
+font-size: 1.2rem;
+color: black;
 }
+
+.description span
+{
+  margin: 0;
+  box-sizing: border-box;
+  color: black;
+}
+
+.footercarte
+{
+  background-color: white;
+  padding-top: 1;
+   width: 90%;
+   margin-left: 20px;
+   margin-bottom: 30px;
+   position: relative;
+   border-radius: 0 0 1rem 1rem;
+   padding-bottom: 22;
+}
+
+
+.footercarte   .fas
+{
+  color: violet;
+ visibility: hidden;
+ position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footercarte .far
+{
   
-.carte i 
-{
-  color: black;
-  text-decoration: none;
-  position: relative;
-  left: 110px;
-} 
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #353535;
+}
+
 
   footer
   {
@@ -286,6 +350,7 @@ width ;
     padding: 1rem;
     background-color: #353535;;
     color: #fafafa;
+    margin-top: 50px;
   }
 
   footer i
@@ -299,3 +364,10 @@ width ;
     color: #fafafa;
     text-decoration: none;
   }
+
+  footer h2
+  {
+    color: #fff;
+font-family: Shrikhand,"cursive";
+font-size: 1.2rem;
+margin: 0 0 1rem;
