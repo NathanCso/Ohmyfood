@@ -1,7 +1,13 @@
+
+
+
+
+
 body 
 {
     font-family: 'Roboto' ,sans-serif;
     margin: 0 !important;
+    
 }
 
 @media screen and (min-width: 200px) and (max-width: 550px) {
@@ -13,6 +19,85 @@ a{
   text-decoration: none;
 }
 
+.lds-heart {animation: opacity 10s ease-in-out 0.1s;
+  
+}
+
+.lds-dual-ring {
+  display: ;
+  height: 80px;
+  position: relative;
+  left: 200;
+  top: 365;
+}
+
+.lds-dual-ring::before
+{
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 60px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid violet;
+  border-color: rgb(218, 57, 209) transparent rgb(34, 31, 34) transparent;
+  animation: lds-dual-ring 1.2s ease-in-out 8 forwards
+}
+
+
+.lds-dual-ring:after {
+  content: " ";
+  display: none;
+ 
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+
+  99.999% {
+    opacity: 1;
+  }
+  100% {   /* uniquement vers la fin de l'animation */
+    opacity: 0;
+  }
+  
+ 
+}
+
+@keyframes opacity {
+0% {opacity: 0%;}
+100%{opacity: 100%;}
+
+}
+
+
+.loadin
+{
+  
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  opacity: 0.2;
+  animation: disparition 2s 2s none;
+  transform-origin: top;
+}
+
+@keyframes disparition {
+0% {
+  transform: scale(1);
+}
+100%{
+  transform: scale(0);
+}
+   
+}
 
 
 header img 
@@ -22,7 +107,8 @@ header img
     justify-content: center;
     margin: auto;
     text-align: center;
-    
+    bottom: 22px;
+    position: relative;
 }
 
  .localisation
@@ -75,7 +161,7 @@ header span
   font-size: 1.2rem;
   display: flex;
 }
-
+ 
 
 .explore a 
 {
@@ -270,7 +356,7 @@ position: relative;
   border-radius: 0.3rem;
   position: absolute;
   position: absolute;
-  top: 960px;
+  top: 1050px;
   right: 50px;
 }
 
@@ -283,7 +369,7 @@ position: relative;
   border-radius: 0.3rem;
   position: absolute;
   position: absolute;
-  top: 1280;
+  top: 1370;
   right: 50px;
 }
   
@@ -322,15 +408,36 @@ color: black;
 }
 
 
+
+
+
+
 .footercarte   .fas
 {
-  color: violet;
- visibility: hidden;
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  transition-duration: .25s;
+ opacity: 0;
  position: absolute;
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
 }
+
+.footercarte .fas:hover
+{
+
+  opacity: 1;
+  position: absolute;
+   right: 1rem;
+   top: 50%;
+   transform: translateY(-50%);
+   overflow: hidden;
+}
+
 
 .footercarte .far
 {
@@ -342,6 +449,10 @@ color: black;
   color: #353535;
 }
 
+.footercarte .far:hover{
+
+    color: #9356dc;
+}
 
   footer
   {
@@ -350,7 +461,6 @@ color: black;
     padding: 1rem;
     background-color: #353535;;
     color: #fafafa;
-    margin-top: 50px;
   }
 
   footer i
