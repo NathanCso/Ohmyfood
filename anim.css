@@ -19,16 +19,15 @@ a{
   text-decoration: none;
 }
 
-.lds-heart {animation: opacity 10s ease-in-out 0.1s;
+.lds-heart {animation: opacity 5s ease-in-out 0.1s;
   
 }
 
 .lds-dual-ring {
-  display: ;
-  height: 80px;
-  position: relative;
-  left: 200;
-  top: 365;
+  display:block ;
+  margin: auto;
+  padding-left: 22px;
+  padding-top: 11px;
 }
 
 .lds-dual-ring::before
@@ -37,11 +36,13 @@ a{
   display: block;
   width: 64px;
   height: 60px;
-  margin: 8px;
   border-radius: 50%;
   border: 6px solid violet;
   border-color: rgb(218, 57, 209) transparent rgb(34, 31, 34) transparent;
-  animation: lds-dual-ring 1.2s ease-in-out 8 forwards
+  animation: lds-dual-ring 1.2s ease-in-out 3 forwards;
+  position: relative;
+  top: 22px;
+  
 }
 
 
@@ -75,19 +76,6 @@ a{
 }
 
 
-.loadin
-{
-  
-  position: fixed;
-  inset: 0;
-  z-index: 1;
-  width: 100%;
-  height: 100vh;
-  background-color: white;
-  opacity: 0.2;
-  animation: disparition 2s 2s none;
-  transform-origin: top;
-}
 
 @keyframes disparition {
 0% {
@@ -180,6 +168,11 @@ header span
   cursor: pointer;
   transition: 0.2s ease-in-out;
   text-decoration: none;
+}
+
+.explore a:hover
+{
+  background: linear-gradient(162deg, #eb72c8 0%, #b175fc 100%);
 }
 
 .fonctionnement h2
@@ -369,7 +362,7 @@ position: relative;
   border-radius: 0.3rem;
   position: absolute;
   position: absolute;
-  top: 1370;
+  top: 1370px;
   right: 50px;
 }
   
@@ -388,7 +381,7 @@ font-size: 1.2rem;
 color: black;
 }
 
-.description span
+.description .text
 {
   margin: 0;
   box-sizing: border-box;
@@ -398,13 +391,13 @@ color: black;
 .footercarte
 {
   background-color: white;
-  padding-top: 1;
+  padding-top: 1px;
    width: 90%;
    margin-left: 20px;
    margin-bottom: 30px;
    position: relative;
    border-radius: 0 0 1rem 1rem;
-   padding-bottom: 22;
+   padding-bottom: 22px;
 }
 
 
@@ -451,7 +444,7 @@ color: black;
 
 .footercarte .far:hover{
 
-    color: #9356dc;
+    color: transparent;
 }
 
   footer
