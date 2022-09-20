@@ -381,11 +381,11 @@ font-size: 1.2rem;
 color: black;
 }
 
-.description .text
+.description span
 {
   margin: 0;
   box-sizing: border-box;
-  color: black;
+  
 }
 
 .footercarte
@@ -401,7 +401,9 @@ color: black;
 }
 
 
-
+.footercarte span{
+  color: black;
+}
 
 
 
