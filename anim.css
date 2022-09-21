@@ -26,7 +26,7 @@ a{
 .lds-dual-ring {
   display:block ;
   margin: auto;
-  padding-left: 22px;
+  padding-left: 17px;
   padding-top: 11px;
 }
 
@@ -34,14 +34,15 @@ a{
 {
   content: " ";
   display: block;
-  width: 64px;
-  height: 60px;
+  width: 34px;
+  height: 30px;
   border-radius: 50%;
   border: 6px solid violet;
   border-color: rgb(218, 57, 209) transparent rgb(34, 31, 34) transparent;
   animation: lds-dual-ring 1.2s ease-in-out 3 forwards;
   position: relative;
   top: 22px;
+  margin-right: 22px;
   
 }
 
@@ -471,8 +472,9 @@ color: black;
   }
 
   footer h2
-  {
+  {  
     color: #fff;
 font-family: Shrikhand,"cursive";
 font-size: 1.2rem;
 margin: 0 0 1rem;
+}
