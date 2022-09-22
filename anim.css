@@ -8,6 +8,7 @@ body
     font-family: 'Roboto' ,sans-serif;
     margin: 0 !important;
     
+    
 }
 
 @media screen and  and (max-width: 550px) {
@@ -176,6 +177,11 @@ header span
   background: linear-gradient(162deg, #eb72c8 0%, #b175fc 100%);
 }
 
+.fonctionnement{
+  background-color: white;
+}
+
+
 .fonctionnement h2
 {
        margin-left: 20px;
@@ -191,7 +197,7 @@ header span
     display: flex;
     position: relative;
     height: 40px;
-    width: 80%;
+    width: 78%;
     margin-left: 30px;
   }
 
@@ -205,7 +211,7 @@ header span
     display: flex;
     position: relative;
     height: 40px;
-    width: 80%;
+    width: 78%;
     margin-left: 30px;
   }
   
@@ -219,7 +225,7 @@ header span
     display: flex;
     position: relative;
     height: 40px;
-    width: 80%;
+    width: 78%;
     margin-left: 30px;
   }
   
@@ -448,6 +454,12 @@ color: black;
 .footercarte .far:hover{
 
     color: transparent;
+}
+
+
+div.couleur{
+   background-color: #f6f6f6;
+   padding: 15px;
 }
 
   footer
