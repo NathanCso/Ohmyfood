@@ -169,6 +169,11 @@ animation: scale-up-center 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   }
 }
 
+.sectionmenu:hover .fa-check-circle{
+  transform: rotate(360deg);
+  transition: 0.4s ease-in-out;
+}
+
 
 .sectionmenu:hover  .check
 {
@@ -183,8 +188,8 @@ animation: scale-up-center 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 margin-bottom: 1px;
 margin-left: 10px;
 padding: 1px;
-    
 }
+
 
 .sectionmenu p
 {
@@ -209,8 +214,16 @@ padding: 1px;
   padding-left: 10px;
   margin: 0;
   white-space: nowrap;
-  
 }
+
+.sectionmenu:hover span{
+
+  font-weight: 1px;
+}
+
+
+
+
 
 .check{
 
@@ -228,7 +241,6 @@ padding: 1px;
     right: -100px;
     top: 0;
     opacity: 0;
-   
 }
 
 
@@ -239,30 +251,15 @@ padding: 1px;
   right: 6px;
   position: relative;
   
-    -webkit-animation: rotate-center 0.6s ease-in-out both;
-            animation: rotate-center 0.6s ease-in-out both;
-  
-}
-
-.fa-check-circle::before
-{
-  
-    -webkit-animation: rotate-center 0.6s ease-in-out both;
-            animation: rotate-center 0.6s ease-in-out both;
-  
 }
 
 
 
-.check:hover i
-{
-  transform: rotate(0deg);
-  transition: 0.4s ease-in-out;
-}
 
-.text{
-  color: #e86edb;
-}
+
+
+
+
 
 
 
