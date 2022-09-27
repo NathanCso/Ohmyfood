@@ -35,8 +35,8 @@ a{
 {
   content: " ";
   display: block;
-  width: 34px;
-  height: 30px;
+  width: 44px;
+  height: 0px;
   border-radius: 50%;
   border: 6px solid violet;
   border-color: rgb(218, 57, 209) transparent rgb(34, 31, 34) transparent;
