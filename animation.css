@@ -1,0 +1,661 @@
+
+
+
+
+
+body 
+{
+    font-family: 'Roboto' ,sans-serif;
+    margin: 0 !important;
+    
+    
+}
+
+@media screen and  and (max-width: 550px) {
+ 
+
+}
+
+a{
+  text-decoration: none;
+}
+
+.lds-heart {animation: opacity 5s ease-in-out 0.1s;
+  
+}
+
+.lds-dual-ring {
+  display:block ;
+  margin: auto;
+  padding-left: 17px;
+  padding-top: 11px;
+}
+
+.lds-dual-ring::before
+{
+  content: " ";
+  display: block;
+  width: 34px;
+  height: 30px;
+  border-radius: 50%;
+  border: 6px solid violet;
+  border-color: rgb(218, 57, 209) transparent rgb(34, 31, 34) transparent;
+  animation: lds-dual-ring 1.2s ease-in-out 3 forwards;
+  position: relative;
+  top: 22px;
+  margin-right: 22px;
+  
+}
+
+
+.lds-dual-ring:after {
+  content: " ";
+  display: none;
+ 
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+
+  99.999% {
+    opacity: 1;
+  }
+  100% {   /* uniquement vers la fin de l'animation */
+    opacity: 0;
+  }
+  
+ 
+}
+
+@keyframes opacity {
+0% {opacity: 0%;}
+100%{opacity: 100%;}
+
+}
+
+
+
+@keyframes disparition {
+0% {
+  transform: scale(1);
+}
+100%{
+  transform: scale(0);
+}
+   
+}
+
+
+header img 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    bottom: 22px;
+    position: relative;
+}
+
+ .localisation
+{ 
+    background:#f3f3f3 ; 
+    height: 50px;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 10px 2px #D1C7B6; 
+    box-shadow: 0px 0px 10px 2px #D1C7B6;
+    margin-top: 20px;
+    padding-top: 20px;
+
+}
+
+header i 
+{
+    margin-right: 10px;
+}
+
+header span
+{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.explorediv
+{
+    background-color: #fafafa;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 350px;
+    width: 100%;
+}
+
+.explore h2
+{
+    font-size: 1.9rem;
+    flex-wrap: wrap;
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.explore p 
+{
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  display: flex;
+}
+ 
+
+.explore a 
+{
+  color: white;
+  padding: 1.5rem 3rem;
+  text-align: center;
+  background: #ff79da;
+  background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+  width: min-content;
+  white-space: nowrap;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  border-radius: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.explore a:hover
+{
+  background: linear-gradient(162deg, #eb72c8 0%, #b175fc 100%);
+}
+
+.fonctionnement{
+  background-color: white;
+}
+
+
+.fonctionnement h2
+{
+       margin-left: 20px;
+}
+
+.choose
+{
+    padding: 1.5rem;
+    margin: 1rem 0 1rem .75rem;
+    box-shadow: .25rem .25rem .5rem rgba(0,0,0,.125);
+    border-radius: 1.25rem;
+    background-color: #f6f6f6;
+    display: flex;
+    position: relative;
+    height: 40px;
+    width: 78%;
+    margin-left: 30px;
+  }
+
+  .compose
+  {
+    padding: 1.5rem;
+    margin: 1rem 0 1rem .75rem;
+    box-shadow: .25rem .25rem .5rem rgba(0,0,0,.125);
+    border-radius: 1.25rem;
+    background-color: #f6f6f6;
+    display: flex;
+    position: relative;
+    height: 40px;
+    width: 78%;
+    margin-left: 30px;
+  }
+  
+  .degust
+  {
+    padding: 1.5rem;
+    margin: 1rem 0 1rem .75rem;
+    box-shadow: .25rem .25rem .5rem rgba(0,0,0,.125);
+    border-radius: 1.25rem;
+    background-color: #f6f6f6;
+    display: flex;
+    position: relative;
+    height: 40px;
+    width: 78%;
+    margin-left: 30px;
+  }
+  
+  .choose a 
+  {
+    background: #9356dc;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: absolute;
+    left: -1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .compose a 
+  {
+    background: #9356dc;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: absolute;
+    left: -1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .degust a 
+  {
+    background: #9356dc;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: absolute;
+    left: -1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.choose span
+{
+       margin-left: 50px;
+       font-size: 20px;
+       justify-content: center;
+       margin-top: 10px;
+}
+
+.compose span
+{
+       margin-left: 50px;
+       font-size: 20px;
+       justify-content: center;
+       margin-top: 10px;
+}
+
+.degust span
+{
+       margin-left: 50px;
+       font-size: 20px;
+       justify-content: center;
+       margin-top: 10px;
+}
+
+.choose i 
+{
+  margin-left: 40px;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+
+.compose i
+{
+  margin-left: 40px;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.degust i
+{
+  margin-left: 40px;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+
+.carte:hover
+{
+  filter: brightness(1.1);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+
+
+ .restaurant
+  {
+    background-color: #f6f6f6;
+  }
+
+.restaurant h2
+{
+    margin-left: 20px;
+    padding-top: 30px;
+}
+  
+
+  .restaurant img
+  {
+    height: 12rem;
+width: 90%;
+border: 0 solid transparent;
+border-radius: 1rem 1rem 0 0;
+box-shadow: none;
+object-fit: cover;
+margin-left: 20px ;
+margin-bottom: 1px;
+position: relative;
+  }
+
+
+.new{
+ 
+  background: #a9e0d1;
+  color: #3b8468;
+  font-weight: 500;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.3rem;
+  position: absolute;
+  position: absolute;
+  top: 1010px;
+  right: 50px;
+}
+
+.new2
+{
+  background: #a9e0d1;
+  color: #3b8468;
+  font-weight: 500;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.3rem;
+  position: absolute;
+  position: absolute;
+  top: 1320px;
+  right: 50px;
+}
+  
+.description 
+{
+  background-color: inherit;
+  width: 170px;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.description h3{
+font-weight: 600;
+margin-bottom: 0.5rem;
+font-size: 1.2rem;
+color: black;
+}
+
+.description span
+{
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+.footercarte
+{
+  background-color: white;
+  padding-top: 1px;
+   width: 90%;
+   margin-left: 20px;
+   margin-bottom: 30px;
+   position: relative;
+   border-radius: 0 0 1rem 1rem;
+   padding-bottom: 22px;
+}
+
+
+.footercarte span{
+  color: black;
+}
+
+
+
+.footercarte   .fas
+{
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  transition-duration: .25s;
+ opacity: 0;
+ position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footercarte .fas:hover
+{
+
+  opacity: 1;
+  position: absolute;
+   right: 1rem;
+   top: 50%;
+   transform: translateY(-50%);
+   overflow: hidden;
+   transition-duration: 0.7s;
+}
+
+
+.footercarte .far
+{
+  
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #353535;
+}
+
+.footercarte .far:hover{
+
+    color: transparent;
+}
+
+
+div.couleur{
+   background-color: #f6f6f6;
+   padding: 15px;
+}
+
+  footer
+  {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #353535;;
+    color: #fafafa;
+  }
+
+  footer i
+  {
+      color: #fafafa;
+      padding-right: 20px;
+  }
+
+  footer a 
+  {
+    color: #fafafa;
+    text-decoration: none;
+  }
+
+  footer h2
+  {  
+    color: #fff;
+font-family: Shrikhand,"cursive";
+font-size: 1.2rem;
+margin: 0 0 1rem;
+}
+
+
+
+
+@media screen and (min-width: 500px) {
+
+ body{
+  
+ }
+
+
+  header img 
+  {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      position: relative;
+      margin-left: 11px;
+
+  }
+
+  .lds-dual-ring {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 11px;
+
+}
+
+header span {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-right: 11px;
+}
+
+.localisation {
+  background: #f3f3f3;
+  height: 50px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 10px 2px #D1C7B6;
+  box-shadow: 0px 0px 10px 2px #D1C7B6;
+  margin-top: 20px;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.explore h2 {
+  font-size: 1.9rem;
+  flex-wrap: wrap;
+  display: flex;
+  margin: auto;
+  font-size: 17px;
+}
+
+.explore p {
+  flex-wrap: wrap;
+  font-size: 13px;
+  display: flex;
+  margin: auto;
+ 
+}
+
+.explorediv {
+  background-color: #fafafa;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 350px;
+  width: 100%;
+  
+}
+
+.choose {
+  padding: 0%;
+  margin: 1rem 0 1rem .75rem;
+    margin-left: 0.75rem;
+  box-shadow: .25rem .25rem .5rem rgba(0,0,0,.125);
+  border-radius: 1.25rem;
+  background-color: #f6f6f6;
+  display: flex;
+  position: relative;
+  height: 40px;
+  width: 80%;
+  margin-left: 70px;
+}
+
+.compose {
+  padding: 0%;
+  margin: 1rem 0 1rem .75rem;
+    margin-left: 0.75rem;
+  box-shadow: .25rem .25rem .5rem rgba(0,0,0,.125);
+  border-radius: 1.25rem;
+  background-color: #f6f6f6;
+  display: flex;
+  position: relative;
+  height: 40px;
+  width: 80%;
+  margin-left: 70px;
+}
+
+.degust {
+  padding: 0%;
+  margin: 1rem 0 1rem .75rem;
+    margin-left: 0.75rem;
+  box-shadow: .25rem .25rem .5rem rgba(0,0,0,.125);
+  border-radius: 1.25rem;
+  background-color: #f6f6f6;
+  display: flex;
+  position: relative;
+  height: 40px;
+  width: 80%;
+  margin-left: 70px;
+}
+
+.restaurant img {
+  height: 12rem;
+  width: 80%;
+  border: 0 solid transparent;
+  border-radius: 1rem 1rem 0 0;
+  box-shadow: none;
+  object-fit: cover;
+  margin-left: 50px;
+  position: relative
+  
+}
+
+.footercarte {
+  background-color: white;
+  padding-top: 1px;
+  width: 80%;
+  margin-bottom: 30px;
+  position: relative;
+  border-radius: 0 0 1rem 1rem;
+  padding-bottom: 22px;
+  margin-left: 50px;
+}
+
+.new {
+  background: #a9e0d1;
+  color: #3b8468;
+  font-weight: 500;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.3rem;
+  top: 880PX;
+  right: 4px;
+  margin-right: 221PX;
+  position: absolute;
+}
+
+.new2 {
+  background: #a9e0d1;
+  color: #3b8468;
+  font-weight: 500;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.3rem;
+  position: absolute;
+  top: 1200px;
+  right: 210px;
+}
+
+}
