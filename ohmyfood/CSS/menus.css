@@ -139,7 +139,7 @@ display: grid;
 grid-template-columns: minmax(0, 1fr);
 max-width: 100%;
 overflow: hidden;
-height: 80px;
+height: 70px;
 margin-bottom: 15px;
 position: relative;
 animation: scale-up-center 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -147,10 +147,6 @@ animation: scale-up-center 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 
 }
 
-.sectionmenu div{
-  width: 80%;
-  display: block;
-}
 
 
 /**
@@ -200,6 +196,7 @@ margin-left: 10px;
 padding: 1px;
 overflow: hidden;
 text-overflow: ellipsis;
+font-size: 17px;
 }
 
 
@@ -207,7 +204,7 @@ text-overflow: ellipsis;
 {
   position: absolute;
   right: 30px;
-  bottom: 10px;
+  bottom: -6px;
   font-weight: bolder;
   font-size: 17px;
   overflow: visible;
@@ -226,6 +223,7 @@ text-overflow: ellipsis;
   padding-left: 10px;
   margin: 0;
   white-space: nowrap;
+  font-size: 14px;
 }
 
 
@@ -254,7 +252,6 @@ text-overflow: ellipsis;
     right: -100px;
     top: 0;
     opacity: 0;
-    right: -360px;
 }
 
 
